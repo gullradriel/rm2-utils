@@ -32,8 +32,9 @@ usage()
     echo "   $0 -h # show help"
     echo "   $0 -s # sync remarkable to $backup_dir/xochitl"
     echo "   $0 -b # backup to automatically created $backup_dir/YYYY/MM/DD/HHMMSS directory"
-    echo "   $0 -r $backup_dir/2024/01/28/091723 # restore from given backup directory"
-    echo "   $0 -r $backup_dir/xochitl           # restore from given backup directory"
+    echo "   $0 -r $backup_dir/2024/01/28/091723 # restore from given backup directory, ignore non existing"
+    echo "   $0 -r $backup_dir/xochitl           # restore from given backup directory, ignore non existing"
+    echo "   $0 -R $backup_dir/2024/01/28/091723 # restore from given backup directory, delete non existing"
     exit 1
 }
 
